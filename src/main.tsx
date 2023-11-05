@@ -7,8 +7,7 @@ import {TodoProvider} from "./store/store";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
       <TodoProvider>
-
-    <App />
+            <App />
       </TodoProvider>
   </React.StrictMode>,
 )
