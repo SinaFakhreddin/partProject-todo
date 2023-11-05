@@ -73,7 +73,6 @@ function App() {
                             <Button onClick={()=>setOpenModal(true)} variant="contained"  color={"warning"}>Create Your First Task ;)</Button>
                       }
                       <MyModalComponent children={<TodoFormLogic dispatch={dispatch} todoEditing={todoEditing} setOpenModal={setOpenModal}/>} openModal={openModal} closeModal={()=>setOpenModal(false)}/>
-                      <MyModalComponent children={<DetailTaskComponent setOpenModal={setOpenModal} setOpenTask={setOpenTask} task={selectedTask}/>} openModal={openTask.open} closeModal={()=>setOpenTask({...openTask , open:false})}/>
                   </Box>
                   <Snackbar message={message} open={showMySnackBar} />
               </>
